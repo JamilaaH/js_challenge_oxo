@@ -1,0 +1,8 @@
+.ligne{
+    display: flex;
+}
+.case{
+    height: 3rem;
+    width: 3rem;
+    border: 1px black solid;
+}
