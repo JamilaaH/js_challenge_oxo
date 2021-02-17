@@ -1,8 +1,41 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #808080;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3fada8, #808080);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3fada8, #808080); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+h1 , .tour {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+button {
+    margin-left: 40%;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 18px;
+    display: none;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
 .ligne{
     display: flex;
+    font-size: 40px;
+    color: white;
 }
 .case{
-    height: 3rem;
-    width: 3rem;
-    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    border: 1px white solid;
 }

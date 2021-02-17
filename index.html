@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morpion</title>
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <section>
-    <div class="ligne">
-        <div class="case" id="a-1"></div>
-        <div class="case" id="a-2"></div>
-        <div class="case" id="a-3"></div>
-    </div>
-    <div class="ligne">
-        <div class="case" id="b-1"></div>
-        <div class="case" id="b-2"></div>
-        <div class="case" id="b-3"></div>
-    </div>
-    <div class="ligne">
-        <div class="case" id="c-1"></div>
-        <div class="case" id="c-2"></div>
-        <div class="case" id="c-3"></div>
+    <div class="box">
+        <h1>Le jeu du Morpion</h1>
+        <div class="ligne">
+            <div class="case" id="a-1"></div>
+            <div class="case" id="a-2"></div>
+            <div class="case" id="a-3"></div>
+        </div>
+        <div class="ligne">
+            <div class="case" id="b-1"></div>
+            <div class="case" id="b-2"></div>
+            <div class="case" id="b-3"></div>
+        </div>
+        <div class="ligne">
+            <div class="case" id="c-1"></div>
+            <div class="case" id="c-2"></div>
+            <div class="case" id="c-3"></div>
+        </div>
+        <div class="tour">
+            <span class="text"></span>
+        </div>
+        <div class="btn">
+            <button class="restart">Rejouer</button>
+        </div>
     </div>
 </section>
 

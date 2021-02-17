@@ -1,10 +1,11 @@
 let caseCliquable = document.querySelectorAll(`.case`);
-
+let tour = document.querySelector('.text')
+let btnRestart = document.querySelector('.restart')
 let player1 = true ;
 let player2 = false ;
 
 let gameActive = true;
-
+tour.innerHTML = "C'est parti"
 // ECRIRE X ET O 
 caseCliquable.forEach(element => {
 
@@ -15,6 +16,7 @@ caseCliquable.forEach(element => {
         if (gameActive) {
             if (player1 && element.innerText == ``) {
                 element.innerText = `X`
+                tour.innerHTML ='Au tour du joueur O'
                 player1 = false
                 player2 = true
     
@@ -22,6 +24,7 @@ caseCliquable.forEach(element => {
                 element.innerText = `O`
                 player2 = false
                 player1 = true
+                tour.innerHTML ='Au tour du joueur X'
             }
     
             let a1 = document.getElementById(`a-1`).innerText
@@ -55,17 +58,19 @@ caseCliquable.forEach(element => {
                 let position3 = position[2]  
     
                 if (position1 == `X` && position2 == `X` && position3 == `X`) {
-    
+                    tour.innerHTML ='X a gagné'
                     console.log(`X a gagné`);
                     gameActive = false
                     roundWon = true;
+                    btnRestart.style = "display: flex"
                     return false;
     
                 } else if (position1 == `O` && position2 == `O` && position3 == `O`) {
-    
+                    tour.innerHTML ='O a gagné'
                     console.log(`O a gagné`);
                     gameActive = false
                     roundWon = true;
+                    btnRestart.style = "display: flex"
                     return false;
     
                 }
@@ -78,3 +83,8 @@ caseCliquable.forEach(element => {
         }
     })
 });
+
+//restart avec la game finie
+btnRestart.addEventListener('click', ()=> {
+    document.location.reload()
+})
