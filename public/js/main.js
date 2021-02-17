@@ -47,6 +47,7 @@ caseCliquable.forEach(element => {
 
         console.log(tableauGagnant[0]);
         //verif si ya une ligne de fait 
+        
     })
     
 
